@@ -1,0 +1,299 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family: 'Montserrat_Light';
+	src: url(../font/montserrat/Montserrat-Light.otf) format('OpenType');
+}
+@font-face {
+	font-family: 'Walkway_UltraBold';
+	src: url(../font/Walkway/Walkway_UltraBold.ttf) format('TrueType');
+}
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-image: url(../imgs/bg-gray.png);
+	font-size: 16px;
+	font-family: "微软雅黑", Tahoma, Geneva, sans-serif;
+}
+@media (min-height:760px) {
+#wrapper {
+	background-color: #FDFDFD;
+	position: fixed;
+	height: 600px;
+	width: 980px;
+	left: 50%;
+	top: 50%;
+	margin-left: -490px;
+	margin-top: -300px;
+	border-radius: 8px;
+	box-shadow: 2px 2px 8px #666;
+	background-image: url(../imgs/bg-light.png);
+	background-repeat: repeat;
+}
+}
+ @media (max-height:760px) {
+#wrapper {
+	background-color: #FDFDFD;
+	height: 600px;
+	width: 980px;
+	left: 0;
+	right: 0;
+	margin: 10px auto;
+	border-radius: 8px;
+	box-shadow: 2px 2px 8px #666;
+	background-image: url(../imgs/bg-light.png);
+	background-repeat: repeat;
+}
+}
+.chapter {
+	margin-bottom: 15px;
+	background-color: #F5F5F5;
+	border-radius: 8px 8px 0 0;
+	transition: background 0.5s;
+}
+.chapter:hover {
+	background-color: #222;
+}
+.chapter ul {
+	list-style-type: none;
+	padding-left: 20px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+.chapter li {
+	display: inline;
+	margin-right: 30px;
+	margin-left: 10px;
+}
+.chapter a:link, .chapter a:visited {
+	text-decoration: none;
+	font-weight: bold;
+	padding-top: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	color: #FDFDFD;
+}
+.chapter a.current {
+	background-color: #FDFDFD;
+	color: #000;
+	padding-right: 40px;
+	padding-left: 40px;
+}
+.menu {
+	width: 210px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-right: 5px;
+	padding-left: 5px;
+	clear: none;
+	float: left;
+	margin-left: 15px;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+.menu ol {
+	margin-left: 20px;
+	list-style-type: upper-roman;
+}
+.menu .preface {
+	margin-top: 10px;
+	margin-bottom: 15px;
+	font-size: 14px;
+}
+.menu ol li {
+	margin-top: 5px;
+	margin-bottom: 12px;
+	font-size: 14px;
+}
+.menu ol li ol {
+	margin-left: 15px;
+	list-style-type: decimal;
+}
+.menu ol li ol li {
+	margin-bottom: 9px;
+	font-size: 12px;
+	margin-top: 9px;
+}
+.menu ol.addenda{
+	list-style-type:none;
+	margin-left:5px;
+}
+
+.menu ol.menu_1989 li ol li {
+	margin-bottom: 6px;
+	font-size: 12px;
+	margin-top: 6px;
+}
+.menu ol a:link, .menu ol a:visited {
+	text-decoration: none;
+	color: #333;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.menu ol a:hover {
+	text-decoration: underline;
+}
+.menu ol a.reading {
+	font-weight: bold;
+	text-decoration: underline;
+}
+.menu ol a.undo{
+	color:#ccc;
+}
+.content {
+	width: 660px;
+	clear: none;
+	float: right;
+	margin-left: 10px;
+	overflow: auto;
+	margin-right: 20px;
+	background-image: none;
+	background-repeat: no-repeat;
+	background-color: #FDFDFD;
+	height: 510px;
+	padding-right: 25px;
+	padding-left: 25px;
+	border-radius: 8px;
+	border: 1px solid #eee;
+	outline: none;
+	text-align: justify;
+}
+.content h1 {
+	font-size: 26px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	color: #333;
+}
+.content h2 {
+	font-size: 20px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	color: #333;
+}
+.content h2.color {
+	color: #EB7350;
+}
+.content p {
+	text-indent: 2em;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	line-height: 1.6em;
+}
+.content .quote {
+	/*	font-style: italic;*/
+	font-family: Walkway_UltraBold, "楷体";
+	letter-spacing: 1px;
+	background-color: #FDFDFD;
+	font-weight: 500;
+/*	font-style: italic;*/
+	/*font-size: 16px;*/
+	line-height: 1.5em;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.content a:link, .content a:visited {
+	color: #257CDE;
+}
+.content audio, .content video, .content embed, .content img {
+	margin-left: 30px;
+}
+.content .lyric {
+	margin-top: 200px;
+	font-family: Montserrat_Light;
+	font-style: italic;
+	color: #C00000;
+	font-size: 20px;
+	word-spacing: 3px;
+	margin-bottom: 100px;
+	text-transform: uppercase;
+	line-height: 1.2em;
+}
+.content .lyricinp {
+	font-family: Montserrat_Light;
+	font-style: italic;
+	color: #C00000;
+	font-size: 20px;
+	word-spacing: 3px;
+	text-transform: uppercase;
+	line-height: 1.2em;
+}
+.content .lyric_handwriting {
+	margin-top: 200px;
+	/*	font-style: italic;*/
+	color: #C00000;
+	font-size: 20px;
+	word-spacing: 3px;
+	margin-bottom: 50px;
+	text-transform: capitalize;
+	line-height: 1.2em;
+}
+.content .name {
+	color: #0257E6;
+	font-style: italic;
+}
+.content .space-1line {
+	height: 15px;
+}
+.content .space-2line {
+	height: 35px;
+}
+.content .space-3line {
+	height: 50px;
+}
+.content .Lyrictitle p {
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #CCC;
+	border-bottom-color: #CCC;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	cursor: pointer;
+	background-color: #FFF;
+}
+.content table{
+	margin-left:30px;
+	border-collapse:collapse;
+}
+.content td{
+	width:300px;
+	padding:5px;
+}
+.text-bold {
+	font-weight: bold;
+}
+.text-delete {
+	text-decoration: line-through;
+}
+.text-red {
+	color: #C00000;
+}
+.text-green {
+	color: #00B050;
+}
+.text-orange {
+	color: #F57B17;
+}
+.text-darkblue {
+	color: #0257E6;
+}
+.text-lightblue {
+	color: #00B0F0;
+}
+.text-darkviolet {
+	color: #8A3AC5;
+}
+.text-lightviolet {
+	color: #C0C;
+}
+.text-brown {
+	color: #914111;
+}
+.clear {
+	clear: both;
+}

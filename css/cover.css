@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-image: url(../imgs/bg-gray.png);
+}
+#wrapper {
+	background-color: #FDFDFD;
+	position: fixed;
+	height: 570px;
+	width: 680px;
+	left: 50%;
+	top: 50%;
+	margin-left: -490px;
+	margin-top: -300px;
+	border-radius: 8px;
+	box-shadow: 2px 2px 8px #666;
+	text-align: center;
+	padding-right: 150px;
+	padding-left: 150px;
+	padding-top: 30px;
+}

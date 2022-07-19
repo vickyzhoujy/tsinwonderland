@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family: 'Montserrat_Light';
+	src: url(../font/montserrat/Montserrat-Light.otf) format('OpenType');
+}
+@font-face {
+	font-family: 'Walkway_UltraBold';
+	src: url(../font/Walkway/Walkway_UltraBold.ttf) format('TrueType');
+}
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background-image: url(../imgs/bg-gray.png);
+	font-size: 16px;
+	color: #FDFDFD;
+	font-family: Montserrat_Light, Geneva, sans-serif, "微软雅黑";
+}
+@media (min-height:760px) {
+#wrapper {
+	background-color: #FDFDFD;
+	position: fixed;
+	height: 600px;
+	width: 980px;
+	left: 50%;
+	top: 50%;
+	margin-left: -490px;
+	margin-top: -300px;
+	border-radius: 8px;
+	box-shadow: 2px 2px 8px #666;
+	background-image: url(../imgs/EverythingHasChanged_change2.jpg);
+	background-position: -130px;
+}
+}
+ @media (max-height:760px) {
+#wrapper {
+	background-color: #FDFDFD;
+	height: 600px;
+	width: 980px;
+	left: 0;
+	right: 0;
+	margin: 10px auto;
+	border-radius: 8px;
+	box-shadow: 2px 2px 8px #666;
+	background-image: url(../imgs/EverythingHasChanged_change2.jpg);
+	background-position: -130px;
+}
+}
+#rightside {
+	float: right;
+	width: 250px;
+	color: #fdfdfd;
+	height: 500px;
+	padding-top: 100px;
+	border-radius: 0 8px 8px 0;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#191c23+0,0a0f15+100 */
+	background: #222; /* Old browsers */
+	background: -moz-linear-gradient(top, #222 0%, #0a0f15 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #222 0%, #0a0f15 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #222 0%, #0a0f15 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#191c23', endColorstr='#0a0f15', GradientType=0 ); /* IE6-9 */
+}
+#rightside h1 {
+	text-align: center;
+	font-size: 30px;
+	word-spacing: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#rightside h2 {
+	text-align: center;
+	font-size: 18px;
+}
+#rightside ul {
+	list-style-type: none;
+	text-align: center;
+	margin-top: 30px;
+}
+#rightside ul li {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	transition: background-color 0.3s;
+}
+#rightside ul li a:link, #rightside ul li a:visited {
+	color: #FDFDFD;
+	text-decoration: none;
+	padding: 15px 0;
+	transition: color 0.2s;
+}
+#rightside ul li:hover {
+	background-color: #eee;
+	font-weight: bold;
+}
+#rightside ul li:hover a {
+	color: #333;
+}
